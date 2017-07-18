@@ -17,7 +17,7 @@ public class Main {
 	private static String sent9 = "The door opened slowly.";
 	
     public static void main(String[] args) throws FileNotFoundException {
-    	/*SPOBuilder builder = new SPOBuilder();
+    	SPOBuilder builder = new SPOBuilder();
     	File dir = new File("src/main/resources/AlbertJG_2011_bearbeitet/");
     	for (File file : dir.listFiles()) {
     		Scanner s = new Scanner(file);
@@ -25,7 +25,7 @@ public class Main {
     			builder.add(s.nextLine());
     		}
     	}
-    	System.out.println(builder.toString());*/
+    	System.out.println(builder.toString());
         /*SPOBuilder builder = new SPOBuilder();
         builder.add("Peter, Björn and John were singing in the garage.");
         System.out.println(builder.toString());*/
