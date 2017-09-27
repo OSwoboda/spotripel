@@ -1,8 +1,8 @@
 package de.oswoboda.spotripel;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
+
+import edu.stanford.nlp.simple.Sentence;
 
 public class Main {
 
@@ -17,17 +17,17 @@ public class Main {
 	private static String sent9 = "The door opened slowly.";
 
 	public static void main(String[] args) throws FileNotFoundException {
-		SPOBuilder builder = new SPOBuilder();
-		File dir = new File("src/main/resources/AlbertJG_2011_bearbeitet/");
-		for (File file : dir.listFiles()) {
-			Scanner s = new Scanner(file);
-			while (s.hasNextLine()) {
-				builder.add(s.nextLine());
-			}
-		}
-		System.out.println(builder.toString());
 		// SPOBuilder builder = new SPOBuilder();
-		// builder.add(sent1);
+		// File dir = new File("src/main/resources/AlbertJG_2011_bearbeitet/");
+		// for (File file : dir.listFiles()) {
+		// Scanner s = new Scanner(file);
+		// while (s.hasNextLine()) {
+		// builder.add(s.nextLine());
+		// }
+		// }
 		// System.out.println(builder.toString());
+		SPOBuilder builder = new SPOBuilder();
+		builder.add("To read is easier than to write.");
+		System.out.println(builder.toString());
 	}
 }
